@@ -20,6 +20,10 @@ before do
   end
 end
 
+get '/' do
+  "I am a twitter proxy, visit <a href='https://github.com/johnrees/myna'>https://github.com/johnrees/myna</a> for more details"
+end
+
 get '/user_timeline/:screen_name' do
   tweets = []
   params[:count] ||= 10
